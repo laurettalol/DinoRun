@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import pygame
 
-from Const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
+from code.Const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
 from code.Level import Level
 from code.Menu import Menu
 

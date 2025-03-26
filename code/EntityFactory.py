@@ -1,8 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import random
 
-from Const import WIN_WIDTH, WIN_HEIGHT
+from code.Const import WIN_WIDTH, WIN_HEIGHT
 from code.Background import Background
 from code.Enemy import Enemy
 from code.Player import Player

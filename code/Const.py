@@ -25,6 +25,23 @@ ENTITY_SPEED = {
     'Obst4': 3,
 }
 
+ENTITY_HEALTH = {
+    'Level1Bg0': 999,
+    'Level1Bg1': 999,
+    'Level1Bg2': 999,
+    'Level1Bg3': 999,
+    'Level2Bg0': 999,
+    'Level2Bg1': 999,
+    'Level2Bg2': 999,
+    'Level2Bg3': 999,
+    'Level2Bg4': 999,
+    'Player': 3,
+    'PlayerShot': 1,
+    'Obst1': 1,
+    'Obst2': 2,
+    'Obst3': 1,
+    'Obst4': 2,
+}
 # M
 MENU_OPTION = ('NEW GAME',
                'HIGH SCORE',
