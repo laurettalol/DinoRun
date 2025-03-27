@@ -89,7 +89,7 @@ MENU_OPTION = ('NEW GAME',
                'EXIT')
 
 # P
-PLAYER_KEY_SHOOT = {'Player': pygame.K_RSHIFT}
+PLAYER_KEY_SHOOT = {'Player': pygame.K_LCTRL}
 
 # S
 SPAWN_TIME = 4000

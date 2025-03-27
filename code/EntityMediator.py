@@ -1,6 +1,7 @@
 from code.Const import WIN_WIDTH
 from code.Enemy import Enemy
 from code.Entity import Entity
+from code.Player import Player
 from code.PlayerShot import PlayerShot
 
 
@@ -22,6 +23,10 @@ class EntityMediator:
             valid_interaction = True
         elif isinstance(ent1, PlayerShot) and isinstance(ent2, Enemy):
             valid_interaction = True
+        elif isinstance(ent1, Player) and isinstance(ent2, Enemy):
+            valid_interaction = True
+        elif isinstance(ent1, Enemy) and isinstance(ent2, Player):
+            valid_interaction = True
 
         if valid_interaction:
             if (ent1.rect.right >= ent2.rect.left and
@@ -35,9 +40,9 @@ class EntityMediator:
 
     @staticmethod
     def __give_score(enemy: Enemy, entity_list: list[Entity]):
-        if enemy.last_dmg == 'Player1Shot':
+        if enemy.last_dmg == 'PlayerShot':
             for ent in entity_list:
-                if ent.name == 'Player1':
+                if ent.name == 'Player':
                     ent.score += enemy.score
 
     @staticmethod

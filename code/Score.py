@@ -5,7 +5,7 @@ import pygame
 from pygame import Surface, Rect, KEYDOWN, K_RETURN, K_BACKSPACE, K_ESCAPE
 from pygame.font import Font
 
-from code.Const import C_YELLOW, SCORE_POS, MENU_OPTION, C_WHITE
+from code.Const import C_YELLOW, SCORE_POS, C_ORANGE
 from code.DBProxy import DBProxy
 
 
@@ -27,7 +27,7 @@ class Score:
             self.score_text(48, 'YOU WIN!!', C_YELLOW, SCORE_POS['Title'])
             text = 'Enter Player name (4 characters):'
             score = player_score[0]
-            self.score_text(20, text, C_WHITE, SCORE_POS['EnterName'])
+            self.score_text(20, text, C_ORANGE, SCORE_POS['EnterName'])
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -43,7 +43,7 @@ class Score:
                     else:
                         if len(name) < 4:
                             name+= event.unicode
-            self.score_text(20, name, C_WHITE, SCORE_POS['Name'])
+            self.score_text(20, name, C_ORANGE, SCORE_POS['Name'])
 
             pygame.display.flip()
             pass
